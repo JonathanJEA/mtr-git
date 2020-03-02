@@ -9,6 +9,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { GridComponent } from './component/grid/grid.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import {MatIconModule} from '@angular/material/icon'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,8 +3,8 @@ export interface Conductor {
     nombre: string;
     apellido: string;
     licencia: string;
-    vigencia_licencia: string;
+    vigencia_licencia: number;
     curp: string;
     direccion: string;
-    path_documento: string;
+    path_documentos: string;
 }

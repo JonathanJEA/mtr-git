@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "Dylan",
+    "apellido": "Lopez",
+    "curp": "LXDJ990617EEUA06",
+    "direccion": "residencia #numero, ciudad, estado, pais",
+    "licencia": "CCCC#####",
+    "vigencia_licencia": 1646230934,
+    "path_documentos": "$/etc/apache/hdocs/servermrt/dylan_lopez_1"
+  },
+  {
+    "id": 2,
+    "nombre": "Oscar",
+    "apellido": "Morales",
+    "curp": "MOA960707DML06",
+    "direccion": "residencia #numero, ciudad, estado, pais",
+    "licencia": "VVVV#####",
+    "vigencia_licencia": 1646230934,
+    "path_documentos": "$/etc/apache/hdocs/servermrt/oscar_morales_2"
+  },
+  {
+    "id": 3,
+    "nombre": "Diana",
+    "apellido": "Colunga",
+    "curp": "CDF950211NLMSL06",
+    "direccion": "residencia #numero, ciudad, estado, pais",
+    "licencia": "DDDD#####",
+    "vigencia_licencia": 1646230934,
+    "path_documentos": "$/etc/apache/hdocs/servermrt/diana_Colunga_3"
+  }
+]
