@@ -8,8 +8,17 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { GridComponent } from './component/grid/grid.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ConductorFormComponent } from './component/conductor-form/conductor-form.component';
+import { InfoComponent } from './info/info.component';
 
-import {MatIconModule} from '@angular/material/icon'
+
+import {MatIconModule} from '@angular/material/icon';
+
+import { HttpClientModule } from '@angular/common/http';
+import { VehiuloFormComponent } from './component/vehiulo-form/vehiulo-form.component';
+import { ConcesionFormComponent } from './component/concesion-form/concesion-form.component';
+import { MantenimientoFormComponent } from './component/mantenimiento-form/mantenimiento-form.component';
+
 
 @NgModule({
   declarations: [
@@ -18,12 +27,18 @@ import {MatIconModule} from '@angular/material/icon'
     HeaderComponent,
     FooterComponent,
     GridComponent,
-    DashboardComponent
+    DashboardComponent,
+    ConductorFormComponent,
+    InfoComponent,
+    VehiuloFormComponent,
+    ConcesionFormComponent,
+    MantenimientoFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
