@@ -5,8 +5,9 @@ import { InfoComponent } from './info/info.component';
 
 
 const routes: Routes = [
-  { path:'dashboard', component:GridComponent },
-  { path:'info', component:InfoComponent }
+  {path: '', component: GridComponent},
+  { path: 'dashboard', component:GridComponent },
+  { path: 'info', component:InfoComponent }
 ];
 
 @NgModule({

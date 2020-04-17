@@ -1,31 +1,44 @@
-<p>conductor-form works!</p>
-<form action="get">
+<form #f="ngForm">
     <div class="container">
         <label for="">Nombre</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.nombre" name="textbox_nombre">
+        <label *ngIf="error_textbox_nombre">Error Concesion ==> </label>
     </div>
     <div class="container">
         <label for="">Apellido</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.apellido" name="textbox_apellido">
+        <label *ngIf="error_textbox_apellido">Error Concesion ==> </label>
     </div>
     <div class="container">
         <label for="">Direccion</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.direccion" name="textbox_direccion">
+        <label *ngIf="error_textbox_direccion">Error Concesion ==> </label>
     </div>
     <div class="container">
         <label for="">CURP</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.curp" name="textbox_curp">
+        <label *ngIf="error_textbox_curp">Error Concesion ==> </label> 
     </div>
     <div class="container">
         <label for="">Licencia</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.licencia" name="textbox_licencia">
+        <label *ngIf="error_textbox_licencia">Error Concesion ==> </label>
     </div>
     <div class="container">
         <label for="">Vigencia de Licencia</label>
-        <input type="text">
+        <input [(ngModel)]="conductor.vigencia_licencia" name="textbox_vigencia_licencia">
+        <label *ngIf="error_textbox_vigencia_licencia">Error Concesion ==> </label>
     </div>
     <div class="container">
-            <label for="">Documentos</label>
-            <input type="text">
+        <label for="">Documentos</label>
+        <input [(ngModel)]="conductor.path_documentos" name="textbox_documentos">
+        <label *ngIf="error_textbox_path_documentos">Error Concesion ==> </label>
+    </div>
+    <div class="container">
+        <input type="submit" (click)="agregar_conductor()" value="Add Info">
+        <input type="submit" (click)="modificar_conductor()" value="Update Info">
+        <input type="submit" (click)="buscar_conductor()" value="Search Info">
+        <input type="submit" (click)="eliminar_conductor()" value="Delete Info">
+        <input [(ngModel)]="conductor.id" name="textbox_id" *ngIf="textbox_id_visible">
     </div>
 </form>

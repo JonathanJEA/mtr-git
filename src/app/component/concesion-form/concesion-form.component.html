@@ -1,1 +1,21 @@
 <p>concesion-form works!</p>
+<form #f="ngForm">
+    <div class="container">
+        <label for="">Concesion: </label>
+        <input [(ngModel)]="concesion.concesion" name="textbox_concesion">
+        <label for="">Error Concesion ==> </label>
+    </div>
+    <div class="container">
+        <label for="">Conductor</label>
+        <input [(ngModel)]="concesion.id_conductor" name="textbox_conductor">
+        <label for="">Error Concesion ==> </label>
+    </div>
+    <div class="container">
+        <label for="">Vehiculo:</label>
+        <input [(ngModel)]="concesion.id_vehiculo" name="textbox_vehiculo">
+        <label for="">Error Concesion ==> </label>
+    </div>
+    <div class="container">
+        <input type="submit" value="Update concesion">
+    </div>
+</form>

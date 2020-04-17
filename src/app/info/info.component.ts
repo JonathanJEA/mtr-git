@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
   conductor_visible:boolean = true;
-  concesion_visible:boolean = false;
-  vehiculo_visible:boolean = false;
+  concesion_visible:boolean = true;
+  vehiculo_visible:boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {

@@ -8,22 +8,26 @@ import { Conductor } from '../interface/conductor';
   providedIn: 'root'
 })
 export class ConductorService {
-  baseUrl = 'http://localhost/ServerMTR/';
+   baseUrl = 'http://localhost/ServerMTR/api/';
   constructor(private http:HttpClient) { }
 
-  searchConductor(id:number):Observable<Conductor>{
-    return this.http.get<Conductor>(`${this.baseUrl}`,{params: 
-      new HttpParams().set('id',id.toString())});
+  searchConductor(id:number,licencia:string):Observable<Conductor>{
+    return this.http.get<Conductor>(`${this.baseUrl}buscar_conductor`,{params: 
+      new HttpParams().set('id',id.toString()).set('licencia',licencia)});
   }
-  insertConductor(){
-
-  }
-
-  updateConductor(){
-
+  insertConductor(conductor:Conductor): Observable<Conductor> {
+    return this.http.post<Conductor>(`${this.baseUrl}agregar_conductor`,conductor);
   }
 
-  deleteConductor(){
+  updateConductor(conductor:Conductor): Observable<Conductor>{
+    return this.http.put<Conductor>(`${this.baseUrl}modificar_conductor`,conductor);
+  }
 
+  deleteConductor(id:number,licencia:string){
+    return this.http.delete<Conductor>(`${this.baseUrl}agregar_conductor`,{
+      params: new HttpParams()
+        .set('id',id.toString())
+        .set('licencia',licencia.toString())
+    });
   }
 }

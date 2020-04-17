@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from  '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { InfoComponent } from './info/info.component';
 
 
 import {MatIconModule} from '@angular/material/icon';
+import {MatSortModule} from '@angular/material/sort';
 
 import { HttpClientModule } from '@angular/common/http';
 import { VehiuloFormComponent } from './component/vehiulo-form/vehiulo-form.component';
@@ -38,7 +40,9 @@ import { MantenimientoFormComponent } from './component/mantenimiento-form/mante
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
